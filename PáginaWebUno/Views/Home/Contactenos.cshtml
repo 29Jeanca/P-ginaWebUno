@@ -1,0 +1,59 @@
+﻿@model PáginaWebUno.Models.DatosContacto
+@{
+    ViewData["Title"] = "Contactenos";
+
+    <h1>  Formulario de contacto</h1>
+
+    <p>Ingrese sus datos personales</p>
+
+    <hr />
+
+    <form asp-action="Contactenos">
+    <div>
+        <label for="nombre">
+        Nombre
+        </label>
+        <input type="text" class="form-control" name="nombre">
+    </div>
+    <div>
+       <label for="edad">
+       Edad
+       </label>
+        <input type="number" class="form-control" name="edad">
+    </div>
+    <div>
+       <label for="correo">
+     Correo Electrónico
+     </label>
+        <input type="email" class="form-control" name="correo">
+    </div>
+    <div>
+      <label for="comentario">
+      Comentario
+      </label>
+      <input type="text" class="form-control" name="comentario">
+    </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+    </form>
+
+
+
+    //<h4>  
+    //    Nombre<br>
+    //     &nbsp; &nbsp;  @Model.nombre  
+    //     <hr>
+    //     Edad<br>
+    //     &nbsp;&nbsp; @Model.edad
+    //     <hr>
+    //     Correo Electrónico<br>
+    //     &nbsp;&nbsp; @Model.correoElectronico
+    //     <hr>
+    // </h4>
+    //    <h4>
+    //    <center>
+    //         Comentario<br/>
+    //         @Model.comentario</center>  
+    //    </h4>  
+    
+}

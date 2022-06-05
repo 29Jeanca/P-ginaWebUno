@@ -22,6 +22,15 @@ namespace PáginaWebUno.Controllers
         {
             return View();
         }
+        public IActionResult Contactenos()
+        {
+            //DatosContacto dc = new DatosContacto();
+            //dc.nombre = "Jeanca";
+            //dc.edad = 18;
+            //dc.correoElectronico = "jbarberena@edu.upolitecnica.cr";
+            //dc.comentario = "Volando voy, volando vengo";
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
