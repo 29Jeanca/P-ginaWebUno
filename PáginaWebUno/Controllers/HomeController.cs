@@ -30,8 +30,13 @@ namespace PáginaWebUno.Controllers
             //dc.correoElectronico = "jbarberena@edu.upolitecnica.cr";
             //dc.comentario = "Volando voy, volando vengo";
             return View();
+           
         }
-
+        [HttpPost] /*Funciona unicamente cuando se envia el formulario */
+        public IActionResult Contactenos(DatosContacto DC)
+        {
+            return View("ContactenosGracias", DC);
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
